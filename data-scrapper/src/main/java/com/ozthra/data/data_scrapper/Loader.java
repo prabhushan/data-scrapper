@@ -56,6 +56,30 @@ public class Loader {
 
 			}
 			
+			//doc-availability-block
+			Elements availEle = element.select("div.doc-availability-block p.locality a span");
+			for (Element elementDetails : availEle) {
+				System.out.println(elementDetails.text());
+
+			}
+			
+			//doc-availability-block
+			Elements feesEle = element.select("div.doc-availability-block p.fees span.fees-amount");
+			for (Element elementDetails : feesEle) {
+				System.out.println(elementDetails.text());
+
+			}
+			
+			//timings-block
+			Elements timingEle = element.select("div.doc-availability-block div.timings div.timings-block p");
+			for (Element elementDetails : timingEle) {
+				System.out.println((elementDetails.select("span.days-timing").size() > 0)?elementDetails.select("span.days-timing").get(0).text():"");
+				for (Element eleTime : elementDetails.select("span.hours-timing")) {
+					System.out.println(eleTime.text());
+				};
+
+			}
+			
 			
 			System.out.println("#######################3");
 		}
