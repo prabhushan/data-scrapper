@@ -2,7 +2,6 @@ package com.ozthra.data.data_scrapper;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
-import java.net.URL;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -84,6 +83,7 @@ public class Loader {
 			System.out.println("#######################3");
 		}
 
+		System.out.println((doc.select("a.page_link_next").size() > 0)? true:false);
 	/*	Elements photoElement = doc.select("div.listing-row div.doc-photo-container span");
 
 		
