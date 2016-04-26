@@ -48,7 +48,7 @@ public class DataImporter {
 			log.info("Completed -" + j);
 		}
 		try(PersistData persistData = new PersistData()){
-			persistData.insertData(listResponse);
+			persistData.insertData(listResponse,"data");
 
 		}
 	}

@@ -1,4 +1,4 @@
-package com.ozthra.dataimport;
+package com.ozthra.dataimport.model;
 
 import java.util.List;
 

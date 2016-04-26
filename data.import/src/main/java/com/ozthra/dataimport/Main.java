@@ -6,6 +6,8 @@ import org.apache.commons.io.FileUtils;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.ozthra.dataimport.model.Data;
+import com.ozthra.dataimport.model.PracticeInfo;
 
 public class Main {
 

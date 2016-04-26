@@ -1,4 +1,4 @@
-package com.ozthra.dataimport;
+package com.ozthra.dataimport.model;
 
 public class PracticeInfo {
 
