@@ -8,7 +8,7 @@ import org.bson.Document;
 import com.mongodb.MongoClient;
 import com.mongodb.client.FindIterable;
 
-public class PersistData implements AutoCloseable{
+public class PersistData implements IPersist,AutoCloseable{
 
 	static MongoClient mongo = new MongoClient("localhost", 27017);
 	private static final String DATABASE = "data";
